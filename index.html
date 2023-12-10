@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        *{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background:url(purple.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+.wrapper{
+    width: 350px;
+   margin: 20px;
+   padding: 30px;
+   border-radius:20px;
+   box-shadow: 0 0 10px rgb(228, 228, 240);
+    background: transparent;
+    border: 1px solid rgb(164, 4, 179);
+    backdrop-filter: blur(5px);
+    
+  
+}
+.wrapper h1{
+    text-align: center;
+    font-size: 36px;
+    color: aliceblue;
+   
+}
+.inputbox {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    border-bottom: 2px solid black;
+    margin: 30px 0;
+}
+.inputbox label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    transform: translateX(-5px);
+    pointer-events: none;
+    font-weight: 500;
+    transition:  .5s;
+    font-size: 16px;
+    color:aliceblue;
+
+}
+.inputbox input:focus~label,
+.inputbox input:focus~label{
+    top: -15px;
+}
+.inputbox input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+.wrapper .remember{
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 10px 0  ;
+}
+.remember label{
+    color:aliceblue;
+    margin-left: 5px;
+    font-size: 16px;
+    font-weight: bold;
+}.remember label input {
+margin: 6px;
+}
+.remember a{
+    color: aliceblue;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+.button input{
+    width: 50%;
+    height: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 90px;
+    border: none;
+    outline: none;
+    border: 2px solid navajowhite;
+    border-radius: 40px;
+    font-size: 20px;
+    color:black;
+    font-weight: 600;
+    box-shadow: 0px 10px 10px rgb(0, 0, 0);
+}
+.wrapper .Register{
+    margin: 10px;
+}
+.Register p {
+color: aliceblue;
+display: flex;
+justify-content: space-between;
+font-size: 16px;
+}
+.Register a{
+    color: aliceblue;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+}
+.Register a:hover{
+    text-decoration: underline;
+}
+
+    </style>
+   
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1>Login</h1>
+        <div class="inputbox">
+            <input type="text"> 
+           <label >Username</label>
+
+        </div>
+        <div class="inputbox">
+            <input type="password">
+           <label >  Password</label>
+        </div>
+        <div class="remember">
+            <label ><input type="checkbox">Remember me</label>
+            <a href="#">Forget password?</a>
+        </div>
+        <div class="button">
+            <input type="submit" value="Log In">
+        </div>
+        <div class="Register" >
+            <p>Dont have a Account?<a href="#">Register</a></p>
+          
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
